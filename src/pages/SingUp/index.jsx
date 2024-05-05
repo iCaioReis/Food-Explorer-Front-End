@@ -1,7 +1,8 @@
 import { Container, Form, Logo} from './styles';
 import logoImg from '../../assets/logo.png'
 
-import { Input } from "../../components/Input"
+import { Input } from "../../components/Input";
+import { Button } from '../../components/Button';
 
 export function SignUp(){
     return(
@@ -25,6 +26,8 @@ export function SignUp(){
                 <Input 
                     placeholder="No mínimo 6 caracteres"
                 />
+
+                <Button title={"Criar Conta"}/>
             </Form>
         </Container>
     )
