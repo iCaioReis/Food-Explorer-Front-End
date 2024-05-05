@@ -1,5 +1,31 @@
+import { Container, Form, Logo} from './styles';
+import logoImg from '../../assets/logo.png'
+
+import { Input } from "../../components/Input"
+
 export function SignUp(){
     return(
-        <h1>Teste</h1>
+        <Container>
+            <Logo>
+                <img src={logoImg} alt="Logo de um exágono azul" />
+                <h1>food explorer</h1>
+            </Logo>
+            <Form>
+                <h1>Crie sua conta</h1>
+
+                <span>Seu nome</span>
+                <Input 
+                    placeholder="Exemplo: Maria da Silva"
+                />
+                <span>Email</span>
+                <Input 
+                    placeholder="Exemplo: exemplo@exemplo.com.br"
+                />
+                <span>Senha</span>
+                <Input 
+                    placeholder="No mínimo 6 caracteres"
+                />
+            </Form>
+        </Container>
     )
 }
