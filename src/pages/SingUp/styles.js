@@ -22,5 +22,13 @@ export const Logo = styled.div`
 
 export const Form = styled.form`
     padding: 64px;
-    background-color: ${({theme}) => theme.COLORS.DARK_700};;
+    background-color: ${({theme}) => theme.COLORS.DARK_700};
+
+    >span{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: ${({theme}) => theme.COLORS.LIGHT_400};
+    }
 `;
