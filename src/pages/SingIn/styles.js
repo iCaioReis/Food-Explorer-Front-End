@@ -31,7 +31,7 @@ export const Form = styled.form`
 
     border-radius: 16px;
 
-    height: 621px;
+    height: 540px;
     width: 476px;
 
     > h1 {
