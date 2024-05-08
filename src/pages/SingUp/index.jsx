@@ -3,6 +3,7 @@ import logoImg from '../../assets/logo.png'
 
 import { Input } from "../../components/Input";
 import { Button } from '../../components/Button';
+import { ButtonText } from '../../components/ButtonText';
 
 export function SignUp(){
     return(
@@ -28,6 +29,8 @@ export function SignUp(){
                 />
 
                 <Button title={"Criar Conta"}/>
+
+                <ButtonText title={"Já tenho uma conta"}/>
             </Form>
         </Container>
     )

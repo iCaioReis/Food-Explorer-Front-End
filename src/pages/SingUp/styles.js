@@ -55,4 +55,8 @@ export const Form = styled.form`
         margin-top: 8px;
         margin-bottom: 32px;
     }
+
+    button{
+        margin-bottom: 32px;
+    }
 `;
