@@ -32,6 +32,7 @@ export const Form = styled.form`
     border-radius: 16px;
 
     height: 621px;
+    width: 476px;
 
     > h1 {
         font-family: "Roboto", sans-serif;
