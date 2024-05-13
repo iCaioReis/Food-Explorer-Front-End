@@ -2,15 +2,21 @@ import styled from "styled-components";
 
 export const Container = styled.header`
     background-color: ${({ theme }) => theme.COLORS.DARK_600};
+    height: 104px;
 `;
 
 export const Content = styled.div`
     max-width: 1122px;
-    display: flex;
-    justify-content: space-between;
+    height: 104px;
 
-    > input {
-        max-width: 580px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    
+
+     input {
+       
     }
 
     > button {
@@ -19,6 +25,9 @@ export const Content = styled.div`
 `;
 
 export const Logo = styled.div`
+
+    width: 197px;
+
     display: flex;
     gap: 20px;
     align-items: center;
@@ -28,5 +37,6 @@ export const Logo = styled.div`
         font-weight: 700;
         font-style: normal;
         font-size: 28px;
+        white-space: nowrap
     }
 `;
