@@ -2,8 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
+    padding: 0 14px;
     display: flex;
     align-items: center;
+
+    border-radius: 8px;
+
+    background-color: ${({theme}) => theme.COLORS.DARK_900};
 
     > input {
         width: 100%;
@@ -11,8 +16,7 @@ export const Container = styled.div`
         padding: 16px 14px;
 
         border: none;
-        border-radius: 8px;
-
+        
         background-color: ${({theme}) => theme.COLORS.DARK_900};
 
         font-size: 16px;

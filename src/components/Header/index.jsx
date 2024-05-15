@@ -1,5 +1,9 @@
 import { Container, Content, Logo } from "./styles";
 
+import { IoIosSearch } from "react-icons/io";
+import { PiSignOut } from "react-icons/pi";
+import { PiReceipt } from "react-icons/pi";
+
 import { Input } from "../Input";
 import { Button } from "../Button";
 
@@ -14,9 +18,17 @@ export function Header() {
                     <h1>food explorer</h1>
                 </Logo>
 
-                <Input placeholder={"Busque por pratos ou ingredientes"} />
+                <Input 
+                    placeholder={"Busque por pratos ou ingredientes"}
+                    icon={IoIosSearch}
+                />
 
-                <Button title={"Pedidos(0)"} />
+                <Button 
+                    title={"Pedidos(0)"}
+                    icon={PiReceipt}
+                />
+
+                <PiSignOut size={66}/>
             </Content>
         </Container>
     );

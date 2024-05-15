@@ -12,12 +12,9 @@ export const Content = styled.div`
     margin: 0 auto;
 
     display: flex;
-    align-items: center;
+    gap: 32px;
     
-
-     input {
-       
-    }
+    align-items: center;
 
     > button {
         width: 216px;
@@ -25,9 +22,6 @@ export const Content = styled.div`
 `;
 
 export const Logo = styled.div`
-
-    width: 197px;
-
     display: flex;
     gap: 20px;
     align-items: center;
