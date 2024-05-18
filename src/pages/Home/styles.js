@@ -27,6 +27,22 @@ export const Banner = styled.div`
     }
 
     > h1 {
-        
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 140%;
+
+        position: relative;
+        top: 88px;
+        right: 100px;
+    }
+    p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+
+        position: relative;
+        top: 88px;
+        right: 100px;
     }
 `;
