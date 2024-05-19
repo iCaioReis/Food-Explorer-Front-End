@@ -19,11 +19,10 @@ export const Banner = styled.div`
 
     text-align: right;
     
-
     > img {
         position: absolute;
         top: -146px;
-        left: -50px;
+        left: -55px;
     }
 
     > h1 {
@@ -45,4 +44,8 @@ export const Banner = styled.div`
         top: 88px;
         right: 100px;
     }
+`;
+
+export const SectionFood = styled.div`
+    margin-top: 50px;
 `;
