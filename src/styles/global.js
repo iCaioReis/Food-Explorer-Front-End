@@ -31,4 +31,29 @@ export default createGlobalStyle`
     button:hover, a:hover{
         filter: brightness(0.9);
     }
+
+    .poppins_100_medium{
+        font-family: 'poppins', serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 170%;
+    }
+    .poppins_200_medium{
+        font-family: 'poppins', serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+    }
+    .poppins_300_regular{
+        font-family: 'poppins', serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+    }
+    .poppins_300_bold{
+        font-family: 'poppins', serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+    }
 `
