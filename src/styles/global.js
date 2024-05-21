@@ -44,6 +44,18 @@ export default createGlobalStyle`
         font-size: 20px;
         line-height: 160%;
     }
+    .poppins_400_medium{
+        font-family: 'poppins', serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 140%;
+    }
+    .poppins_500_medium{
+        font-family: 'poppins', serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 140%;
+    }
     .poppins_300_regular{
         font-family: 'poppins', serif;
         font-weight: 700;
@@ -55,5 +67,64 @@ export default createGlobalStyle`
         font-weight: 700;
         font-size: 24px;
         line-height: 140%;
+    }
+
+    .roboto_smallest_regular{
+        font-family: 'Roboto', serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 160%;
+    }
+    .roboto_smaller_regular{
+        font-family: 'Roboto', serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+    }
+    .roboto_smaller_regular{
+        font-family: 'Roboto', serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+    }
+    .roboto_smaller_bold{
+        font-family: 'Roboto', serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 160%;
+    }
+    .roboto_small_spaced{
+        font-family: 'Roboto', serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+    }
+    .roboto_small_regular{
+        font-family: 'Roboto', serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+    }
+    .roboto_big_bold{
+        font-family: 'Roboto', serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 160%;
+    }
+    .roboto_bigger_bold{
+        font-family: 'Roboto', serif;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .roboto_biggest_regular{
+        font-family: 'Roboto', serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 160%;
+    }
+    .roboto_giant_bold{
+        font-family: 'Roboto', serif;
+        font-weight: 700;
+        font-size: 42px;
     }
 `
