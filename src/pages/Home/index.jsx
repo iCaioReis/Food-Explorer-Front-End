@@ -3,6 +3,7 @@ import bannerImg from "../../assets/Banners/banner_img.png"
 import { Container, Banner, SectionFood } from "./styles";
 
 import { Header } from "../../components/Header";
+import { Footer } from "../../components/Footer";
 import { Card } from "../../components/Card"
 
 export function Home(){
@@ -18,6 +19,8 @@ export function Home(){
             <SectionFood>
                 <Card/>
             </SectionFood>
+
+            <Footer/>
         </Container>
     );
 }
