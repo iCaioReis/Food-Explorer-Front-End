@@ -7,6 +7,10 @@ export const Container = styled.footer`
     justify-content: center;
     
     background-color: ${({ theme }) => theme.COLORS.DARK_600};
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 `;
 
 export const Content = styled.div`

@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    position: relative;
+    min-height: 100vh;
 
+    padding-bottom: 77px;
 `;
 
 export const Banner = styled.div`
@@ -47,5 +50,7 @@ export const Banner = styled.div`
 `;
 
 export const SectionFood = styled.div`
+    display: flex;
+    gap: 27px;
     margin-top: 50px;
 `;
