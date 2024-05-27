@@ -1,7 +1,8 @@
 import { Container, Content } from "./styles";
 import React, { useState } from "react";
+import { Card } from "../Card";
 
-export function HorizontalMenu({ items, itemsPerPage = 4, ...rest }) {
+export function HorizontalMenu({ items, itemsPerPage = 4, title, ...rest }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleNext = () => {
@@ -22,12 +23,23 @@ export function HorizontalMenu({ items, itemsPerPage = 4, ...rest }) {
         <Container>
             <Content>
                 <button className="nav-button" onClick={handlePrev} disabled={currentIndex === 0}>{"<"}</button>
+
                 <div className="menu">
+                    {/*
                     {visibleItems.map((item, index) => (
                         <div key={index} className="menu-item">
                             {item.name}
                         </div>
                     ))}
+                    */}
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
                 </div>
                 <button className="nav-button" onClick={handleNext} disabled={currentIndex + itemsPerPage >= items.length}>{">"}</button>
             </Content>

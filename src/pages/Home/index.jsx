@@ -28,15 +28,6 @@ export function Home(){
                 <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
             </Banner>
 
-            <SectionFood>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-            </SectionFood>
-
             <HorizontalMenu items={dishes} itemsPerPage={4}/>
 
             <Footer/>

@@ -16,7 +16,6 @@ export const Content = styled.div`
     height: 400px;
     overflow: hidden;
     width: 100%;
-    box-sizing: border-box;
 
     display: flex;
   }
@@ -26,17 +25,10 @@ export const Content = styled.div`
     height: 462px;
     
     border: 1px solid #ccc;
-    margin: 5px 0;
-    padding: 10px;
-    box-sizing: border-box;
   }
   
   .nav-button {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    cursor: pointer;
     padding: 10px;
-    margin: 5px;
   }
   
   .nav-button:disabled {
