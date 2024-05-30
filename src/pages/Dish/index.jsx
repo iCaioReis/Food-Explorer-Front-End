@@ -1,27 +1,30 @@
 import { Header } from "../../components/Header";
+import { Footer } from "../../components/Footer";
 
-import { Container } from "./styles";
+import { Container, Content } from "./styles";
 
-export function Dish(){
-    return(
+export function Dish() {
+    return (
         <Container>
-            <Header/>
-
-            <a href="">{"< Voltar"}</a>
-
-            <div>
-                <img src="" alt="  " />
+            <Header />
+            <Content>
+                <a href="" className="poppins_300_bold">{"< Voltar"}</a>
 
                 <div>
-                    <h1></h1>
-                    <p></p>
+                    <img src="" alt="  " />
 
                     <div>
-                        
+                        <h1></h1>
+                        <p></p>
+
+                        <div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Content>
 
+            <Footer />
         </Container>
     )
 }
