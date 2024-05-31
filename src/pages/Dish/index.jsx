@@ -1,3 +1,7 @@
+import { IoIosArrowBack } from "react-icons/io";
+
+import foodImg from "../../assets/image_food.png"
+
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 
@@ -8,14 +12,17 @@ export function Dish() {
         <Container>
             <Header />
             <Content>
-                <a href="" className="poppins_300_bold">{"< Voltar"}</a>
+                <a href="" className="poppins_300_bold">
+                    { <IoIosArrowBack/> }
+                    {"Voltar"}
+                </a>
 
                 <div>
-                    <img src="" alt="  " />
+                    <img src={foodImg} alt="  " />
 
                     <div>
-                        <h1></h1>
-                        <p></p>
+                        <h1 className="poppins_500_medium">Salada Ravanello</h1>
+                        <p className="poppins_300_regular">Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.</p>
 
                         <div>
 

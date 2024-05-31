@@ -58,7 +58,7 @@ export default createGlobalStyle`
     }
     .poppins_300_regular{
         font-family: 'poppins', serif;
-        font-weight: 700;
+        font-weight: 400;
         font-size: 24px;
         line-height: 140%;
     }
