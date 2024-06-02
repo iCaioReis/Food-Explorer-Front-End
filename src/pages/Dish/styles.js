@@ -38,3 +38,15 @@ export const Content = styled.div`
         }
     }
 `;
+export const Ingredients = styled.div`
+    display: flex;
+    gap: 12px;
+
+    > span {
+        background-color: ${({ theme }) => theme.COLORS.DARK_1000};
+
+        border-radius: 5px;
+
+        padding: 4px 8px;
+    }
+`;

@@ -5,7 +5,7 @@ import foodImg from "../../assets/image_food.png"
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 
-import { Container, Content } from "./styles";
+import { Container, Content, Ingredients } from "./styles";
 
 export function Dish() {
     return (
@@ -24,9 +24,11 @@ export function Dish() {
                         <h1 className="poppins_500_medium">Salada Ravanello</h1>
                         <p className="poppins_300_regular">Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.</p>
 
-                        <div>
-
-                        </div>
+                        <Ingredients>
+                            <span className="poppins_100_medium">Alface</span>
+                            <span className="poppins_100_medium">Cebola</span>
+                            <span className="poppins_100_medium">Pão</span>
+                        </Ingredients>
                     </div>
                 </div>
             </Content>
