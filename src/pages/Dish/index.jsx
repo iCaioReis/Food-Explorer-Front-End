@@ -4,6 +4,8 @@ import foodImg from "../../assets/image_food.png"
 
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
+import { Button } from "../../components/Button";
+import { Amount } from "../../components/Amount";
 
 import { Container, Content, Ingredients } from "./styles";
 
@@ -18,7 +20,7 @@ export function Dish() {
                 </a>
 
                 <div>
-                    <img src={foodImg} alt="  " />
+                    <img src={foodImg} alt=""/>
 
                     <div>
                         <h1 className="poppins_500_medium">Salada Ravanello</h1>
@@ -29,6 +31,12 @@ export function Dish() {
                             <span className="poppins_100_medium">Cebola</span>
                             <span className="poppins_100_medium">Pão</span>
                         </Ingredients>
+
+                        <div>
+
+                        <Amount/>
+                        <Button title={"incluir"}/>
+                        </div>
                     </div>
                 </div>
             </Content>
