@@ -7,27 +7,20 @@ import { Container, Amount} from "./styles";
 
 import foodImg from "../../assets/image_food.png"
 
-export function Card({img: Img, title: Title, description: Description, price: Price}){
+export function Card(props){
 
     return(
         <Container>
             
             <img src={foodImg} alt="" />
-            {Img && <Img/>}
             
             <IoMdHeartEmpty size={36}/>
 
-            {Title && <Title/>}
+            <h1 className="poppins_300_bold">{props.name}</h1>
 
-            <h1 className="poppins_300_bold">Spaguetti Gambe</h1>
+            <p className="roboto_smaller_regular">{props.description}</p>
 
-            {Description && <Description/>}
-
-            <p className="roboto_smaller_regular">Massa fresca com camarões e pesto. </p>
-
-            {Price && <Price/>}
-
-            <h2 className="roboto_biggest_regular">R$ 79,97</h2>
+            <h2 className="roboto_biggest_regular">{props.price}</h2>
 
             <div>
                 <Amount>

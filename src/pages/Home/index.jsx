@@ -7,30 +7,113 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { Card } from "../../components/Card";
 
-export function Home(){
-    const dishes = [
-        { id: 2, name: "Prato 2" },
-        { id: 3, name: "Prato 3" },
-        { id: 4, name: "Prato 4" },
-        { id: 5, name: "Prato 5" },
-        { id: 6, name: "Prato 6" },
-        { id: 7, name: "Prato 7" },
-        { id: 8, name: "Prato 8" },
-        // Adicione mais pratos conforme necessário
-      ];
+import foodImg from "../../assets/image_food.png"
 
-    return(
+export function Home() {
+    const dishes = [
+        {
+            id: 2,
+            dish:
+            {
+                name: "Prato 2",
+                description: "Teste",
+                price: 79.97,
+                img: foodImg
+            }
+        },
+        {
+            id: 3,
+            dish:
+            {
+                name: "Prato 3",
+                description: "Teste",
+                price: 79.97,
+                img: foodImg
+            }
+        },
+        {
+            id: 4,
+            dish:
+            {
+                name: "Prato 4",
+                description: "Teste",
+                price: 79.97,
+                img: foodImg
+            }
+        },
+        {
+            id: 5,
+            dish:
+            {
+                name: "Prato 5",
+                description: "Teste",
+                price: 79.97,
+                img: foodImg
+            }
+        },
+        {
+            id: 6,
+            dish:
+            {
+                name: "Prato 6",
+                description: "Teste",
+                price: 79.97,
+                img: foodImg
+            }
+        },
+        {
+            id: 7,
+            dish:
+            {
+                name: "Prato 7",
+                description: "Teste",
+                price: 79.97,
+                img: foodImg
+            }
+        },
+        {
+            id: 8,
+            dish:
+            {
+                name: "Prato 8",
+                description: "Teste",
+                price: 79.97,
+                img: foodImg
+            }
+        },
+        // Adicione mais pratos conforme necessário
+    ];
+
+    return (
         <Container>
-            <Header/>
+            <Header />
             <Banner>
                 <img src={bannerImg} alt="" />
                 <h1>Sabores inigualáveis</h1>
                 <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
             </Banner>
 
+            {/*
             <HorizontalMenu items={dishes} itemsPerPage={4}/>
 
-            <Footer/>
+            */}
+
+            {
+                dishes.map(dish => {
+                    return(
+                        <Card
+                            name={dish.dish.name}
+                            description={dish.dish.description}
+                            price={dish.dish.price}
+                        />
+                    )
+                })
+            }
+
+
+
+
+            <Footer />
         </Container>
     );
 }

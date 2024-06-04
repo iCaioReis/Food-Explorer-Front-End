@@ -2,7 +2,11 @@ import { Container, Content } from "./styles";
 import React, { useState } from "react";
 import { Card } from "../Card";
 
+import foodImg from "../../assets/image_food.png"
+
 export function HorizontalMenu({ items, itemsPerPage = 4, title, ...rest }) {
+    
+
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleNext = () => {
@@ -32,14 +36,6 @@ export function HorizontalMenu({ items, itemsPerPage = 4, title, ...rest }) {
                         </div>
                     ))}
                     */}
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
                 </div>
                 <button className="nav-button" onClick={handleNext} disabled={currentIndex + itemsPerPage >= items.length}>{">"}</button>
             </Content>
