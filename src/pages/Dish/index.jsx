@@ -7,7 +7,7 @@ import { Footer } from "../../components/Footer";
 import { Button } from "../../components/Button";
 import { Amount } from "../../components/Amount";
 
-import { Container, Content, Ingredients } from "./styles";
+import { Container, Content, Ingredients, Price } from "./styles";
 
 export function Dish() {
     return (
@@ -15,12 +15,12 @@ export function Dish() {
             <Header />
             <Content>
                 <a href="" className="poppins_300_bold">
-                    { <IoIosArrowBack/> }
+                    {<IoIosArrowBack />}
                     {"Voltar"}
                 </a>
 
                 <div>
-                    <img src={foodImg} alt=""/>
+                    <img src={foodImg} alt="" />
 
                     <div>
                         <h1 className="poppins_500_medium">Salada Ravanello</h1>
@@ -32,11 +32,10 @@ export function Dish() {
                             <span className="poppins_100_medium">Pão</span>
                         </Ingredients>
 
-                        <div>
-
-                        <Amount/>
-                        <Button title={"incluir"}/>
-                        </div>
+                        <Price>
+                            <Amount />
+                            <Button title={"incluir"} />
+                        </Price>
                     </div>
                 </div>
             </Content>

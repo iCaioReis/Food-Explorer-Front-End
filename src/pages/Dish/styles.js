@@ -23,10 +23,11 @@ export const Content = styled.div`
 
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         img {
-            width: 400px;
-            height: 400px;
+            width: 390px;
+            height: 390px;
         }
 
         > div {
@@ -48,5 +49,16 @@ export const Ingredients = styled.div`
         border-radius: 5px;
 
         padding: 4px 8px;
+    }
+`;
+
+export const Price = styled.div`
+    margin-top: 24px;
+
+    display: flex;
+    gap: 36px;
+
+    > button {
+        width: auto;
     }
 `;
