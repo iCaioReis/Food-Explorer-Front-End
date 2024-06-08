@@ -93,25 +93,7 @@ export function Home() {
                 <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
             </Banner>
 
-            {/*
-            <HorizontalMenu items={dishes} itemsPerPage={4}/>
-
-            */}
-
-            {
-                dishes.map(dish => {
-                    return(
-                        <Card
-                            name={dish.dish.name}
-                            description={dish.dish.description}
-                            price={dish.dish.price}
-                        />
-                    )
-                })
-            }
-
-
-
+            <HorizontalMenu items={dishes} itemsPerPage={4} title={"teste"}/>
 
             <Footer />
         </Container>

@@ -35,4 +35,5 @@ export const Content = styled.div`
     cursor: not-allowed;
     opacity: 0.5;
   }
+
 `;
