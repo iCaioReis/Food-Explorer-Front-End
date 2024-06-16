@@ -2,6 +2,8 @@ import { Container, Content } from "./styles";
 import React, { useState } from "react";
 import { Card } from "../Card";
 
+import { GrPrevious, GrNext } from "react-icons/gr";
+
 import foodImg from "../../assets/image_food.png"
 
 export function HorizontalMenu({ items, itemsPerPage = 4, title, ...rest }) {
@@ -25,12 +27,17 @@ export function HorizontalMenu({ items, itemsPerPage = 4, title, ...rest }) {
 
     const visibleItems = items.slice(currentIndex, currentIndex + itemsPerPage);
 
-    return (
+    return ( 
         <Container>
             <Content>
-                <h1>{title}</h1>
+                <h1 className="poppins_400_medium">{title}</h1>
 
-                <button className="nav-button" onClick={handlePrev} disabled={currentIndex === 0}>{"<"}</button>
+                <div className="gradient-left"/>
+                <div className="gradient-right"/>
+                
+                <button className="nav-button-prev" onClick={handlePrev} disabled={currentIndex === 0}>
+                    <GrPrevious size={40}/>
+                </button>
 
                 <div className="menu">
                     {
@@ -44,16 +51,11 @@ export function HorizontalMenu({ items, itemsPerPage = 4, title, ...rest }) {
                             )
                         })
                     }
-                
-                    {/*
-                    {visibleItems.map((item, index) => (
-                        <div key={index} className="menu-item">
-                            {item.name}
-                        </div>
-                    ))}
-                    */}
                 </div>
-                <button className="nav-button" onClick={handleNext} disabled={currentIndex + itemsPerPage >= items.length}>{">"}</button>
+                
+                <button className="nav-button-next" onClick={handleNext} disabled={currentIndex + itemsPerPage >= items.length}>
+                <GrNext size={40}/>
+                </button>
             </Content>
         </Container>
     );

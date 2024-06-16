@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 305px;
+    width: 300px;
     height: 462px;
 
     background-color: ${({ theme }) => theme.COLORS.DARK_200};

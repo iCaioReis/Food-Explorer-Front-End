@@ -93,7 +93,7 @@ export function Home() {
                 <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
             </Banner>
 
-            <HorizontalMenu items={dishes} itemsPerPage={4} title={"teste"}/>
+            <HorizontalMenu items={dishes} itemsPerPage={4} title={"Refeições"}/>
 
             <Footer />
         </Container>
