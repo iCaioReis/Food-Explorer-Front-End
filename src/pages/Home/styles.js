@@ -54,3 +54,11 @@ export const SectionFood = styled.div`
     gap: 27px;
     margin-top: 50px;
 `;
+
+export const Menus = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    gap: 48px;
+    margin: 48px 0;
+`;

@@ -6,9 +6,9 @@ import { GrPrevious, GrNext } from "react-icons/gr";
 
 import foodImg from "../../assets/image_food.png"
 
-export function HorizontalMenu({ items, itemsPerPage = 4, title, ...rest }) {
+export function HorizontalMenu({ items, title, ...rest }) {
+    const itemsPerPage = 4;
     
-
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleNext = () => {

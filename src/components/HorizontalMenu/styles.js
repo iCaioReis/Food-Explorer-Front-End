@@ -7,7 +7,8 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   max-width: 1122px;
-  margin: 48px auto 0;
+  
+  margin: 0 auto;
     
   position: relative;
 

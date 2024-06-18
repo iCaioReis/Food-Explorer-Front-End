@@ -1,11 +1,10 @@
 import bannerImg from "../../assets/Banners/banner_img.png"
 
-import { Container, Banner, SectionFood } from "./styles";
+import { Container, Banner, SectionFood, Menus } from "./styles";
 
 import { HorizontalMenu } from "../../components/HorizontalMenu";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
-import { Card } from "../../components/Card";
 
 import foodImg from "../../assets/image_food.png"
 
@@ -93,7 +92,11 @@ export function Home() {
                 <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
             </Banner>
 
-            <HorizontalMenu items={dishes} itemsPerPage={4} title={"Refeições"}/>
+            <Menus >
+                <HorizontalMenu items={dishes} title={"Refeições"}/>
+                <HorizontalMenu items={dishes} title={"Sobremesas"}/>
+                <HorizontalMenu items={dishes} title={"Bebidas"}/>
+            </Menus>
 
             <Footer />
         </Container>
