@@ -35,7 +35,7 @@ export function AddDish() {
 
                 <TextArea
                     placeholder="Fale brevemente sobre o prato, seus ingredientes e composição"
-                    rows="4"
+                    rows="5"
                 />
             </Form>
 
