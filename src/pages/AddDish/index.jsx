@@ -5,36 +5,43 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { TextArea } from "../../components/TextArea";
 
-import { Container } from "./styles";
+import { Container, Content, Form } from "./styles";
 
 
-export function AddDish(){
-    return(
+export function AddDish() {
+    return (
         <Container>
-            <Header/>
+            <Header />
 
-            <a href="" className="poppins_300_bold">
-                {<IoIosArrowBack />}
-                {"Voltar"}
-            </a>
+            <Content>
 
-            <div>
-                <Input placeholder="Selecione imagem" type="file"/>
-                <Input placeholder="Ex.: Salada Ceasar"/>
-                <Input placeholder="Refeição"/>
-            </div>
+                <a href="" className="poppins_300_bold">
+                    {<IoIosArrowBack />}
+                    {"Voltar"}
+                </a>
 
-            <div>
-                <Input placeholder="R$ 00,00"/>
-            </div>
+                <h1 className="poppins_400_medium">Adicionar Prato</h1>
 
-            <TextArea
-                placeholder="Fale brevemente sobre o prato, seus ingredientes e composição"
-                rows="4"
-            />
-            
+                <Form>
+                <div>
+                    <Input placeholder="Selecione imagem" type="file" />
+                    <Input placeholder="Ex.: Salada Ceasar" />
+                    <Input placeholder="Refeição" />
+                </div>
 
-            <Footer/>
+                <div>
+                    <Input placeholder="R$ 00,00" />
+                </div>
+
+                <TextArea
+                    placeholder="Fale brevemente sobre o prato, seus ingredientes e composição"
+                    rows="4"
+                />
+            </Form>
+
+            </Content>
+
+            <Footer />
         </Container>
     )
 };
