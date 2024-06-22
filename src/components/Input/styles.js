@@ -2,6 +2,19 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
+
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    
+
+    > span {
+        color: ${({theme}) => theme.COLORS.LIGHT_400};
+    }
+`;
+
+export const Content = styled.div`
+     width: 100%;
     padding: 0 14px;
     display: flex;
     align-items: center;

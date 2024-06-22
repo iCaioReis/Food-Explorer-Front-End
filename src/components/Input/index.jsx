@@ -1,10 +1,13 @@
-import { Container } from './styles';
+import { Container, Content } from './styles';
 
-export function Input ({ icon: Icon, ...rest}){
+export function Input ({ icon: Icon, title,...rest}){
     return (
         <Container>
-            {Icon && <Icon size={20}/> }
-            <input {...rest}/>
+            {title && <span className='roboto_small_regular'>{title}</span>}
+            <Content>
+                {Icon && <Icon size={20}/> }
+                <input {...rest}/>
+            </Content>
         </Container>
     )
 } 

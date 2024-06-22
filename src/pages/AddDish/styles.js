@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+
 `;
 
 export const Content = styled.div`
@@ -31,5 +32,11 @@ export const Form = styled.form`
     > div {
         display: flex;
         gap: 32px;
+    }
+
+    > button {
+        margin-left: auto;
+        
+        width: fit-content;
     }
 `;

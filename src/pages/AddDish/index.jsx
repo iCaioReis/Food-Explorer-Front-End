@@ -1,10 +1,10 @@
 import { IoIosArrowBack } from "react-icons/io";
 
 import { Input } from "../../components/Input";
+import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { TextArea } from "../../components/TextArea";
-
 import { Container, Content, Form } from "./styles";
 
 
@@ -24,19 +24,21 @@ export function AddDish() {
 
                 <Form>
                 <div>
-                    <Input placeholder="Selecione imagem" type="file" />
-                    <Input placeholder="Ex.: Salada Ceasar" />
-                    <Input placeholder="Refeição" />
+                    <Input placeholder="Selecione imagem" type="file" title="Imagem do prato"/>
+                    <Input placeholder="Ex.: Salada Ceasar" title="Nome"/>
+                    <Input placeholder="Refeição" title="Categoria"/>
                 </div>
 
                 <div>
-                    <Input placeholder="R$ 00,00" />
+                    <Input placeholder="R$ 00,00" title="Ingredientes"/>
                 </div>
 
                 <TextArea
                     placeholder="Fale brevemente sobre o prato, seus ingredientes e composição"
                     rows="5"
                 />
+                
+                <Button title={"Salvar alterações"} type="subimit"/>
             </Form>
 
             </Content>
