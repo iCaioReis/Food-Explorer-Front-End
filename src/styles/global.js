@@ -1,10 +1,19 @@
 import { createGlobalStyle } from "styled-components";
+import { DEVICE_BREACKPOINTS } from "./deviceBreackPoints";
 
 export default createGlobalStyle`
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+    :root{
+        font-size: 16px;
+
+        @media (max-width: ${DEVICE_BREACKPOINTS.MD}){
+            font-size: 12px;
+        } 
     }
 
     body{
@@ -68,7 +77,6 @@ export default createGlobalStyle`
         font-size: 24px;
         line-height: 140%;
     }
-
     .roboto_smallest_regular{
         font-family: 'Roboto', serif;
         font-weight: 400;
