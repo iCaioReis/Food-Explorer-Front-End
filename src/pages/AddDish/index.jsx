@@ -5,8 +5,8 @@ import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { TextArea } from "../../components/TextArea";
-import { Container, Content, Form } from "./styles";
 
+import { Container, Content, Form, Ingredients } from "./styles";
 
 export function AddDish() {
     return (
@@ -30,7 +30,13 @@ export function AddDish() {
                 </div>
 
                 <div>
-                    <Input placeholder="R$ 00,00" title="Ingredientes"/>
+                    <Ingredients>
+                        <span>Alface</span>
+                        <span>Alface</span>
+                        <span>Alface</span>
+                        <span>Alface</span>
+                    </Ingredients>
+                    <Input placeholder="R$ 00,00" title="Preço"/>
                 </div>
 
                 <TextArea
