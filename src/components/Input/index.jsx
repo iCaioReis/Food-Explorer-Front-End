@@ -6,7 +6,7 @@ export function Input ({ icon: Icon, title,...rest}){
             {title && <span className='roboto_small_regular'>{title}</span>}
             <Content>
                 {Icon && <Icon size={20}/> }
-                <input {...rest}/>
+                <input {...rest} className='roboto_small_regular'/>
             </Content>
         </Container>
     )

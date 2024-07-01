@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100%;
 
-    gap: 16px;
+    gap: 1rem;
     display: flex;
     flex-direction: column;
     
@@ -14,8 +14,8 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-     width: 100%;
-    padding: 0 14px;
+    width: 100%;
+    padding: 0 1rem;
     display: flex;
     align-items: center;
 
@@ -25,16 +25,13 @@ export const Content = styled.div`
 
     > input {
         width: 100%;
-        height: 48px;
-        padding: 16px 14px;
+        height: 3rem;
+        padding: 1rem .875rem;
 
         border: none;
         
         background-color: ${({theme}) => theme.COLORS.DARK_900};
-
-        font-size: 16px;
-        font-weight: 400;
-        font-family: "Roboto", sans-serif;
+       
         color: ${({theme}) => theme.COLORS.LIGHT_100};
 
         &::placeholder {

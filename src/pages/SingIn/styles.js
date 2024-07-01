@@ -1,14 +1,22 @@
 import styled from "styled-components";
 
+import { DEVICE_BREACKPOINTS } from "../../styles/deviceBreackPoints";
+
 export const Container = styled.div`
     height: 100vh;
     max-width: 1024px;
 
     margin: 0 auto;
+    padding: 1rem;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media (max-width: ${DEVICE_BREACKPOINTS.SM}){
+        flex-direction: column;
+        justify-content: center;
+    } 
 `;
 
 export const Logo = styled.div`
@@ -18,6 +26,12 @@ export const Logo = styled.div`
 
     > h1 {
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    }
+
+    @media (max-width: ${DEVICE_BREACKPOINTS.SM}){
+       > h1 {
+            font-size: 3rem;
+       } 
     }
 `;
 
@@ -55,5 +69,13 @@ export const Form = styled.form`
         border-style: none;
         
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    }
+
+    @media (max-width: ${DEVICE_BREACKPOINTS.SM}){
+        background: none;
+
+        > h1 {
+            display: none;
+        }
     }
 `;
