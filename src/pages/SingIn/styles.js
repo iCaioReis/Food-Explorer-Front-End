@@ -13,52 +13,47 @@ export const Container = styled.div`
 
 export const Logo = styled.div`
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     align-items: center;
 
     > h1 {
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 42px;
+        color: ${({ theme }) => theme.COLORS.LIGHT_100};
     }
 `;
 
 export const Form = styled.form`
-    padding: 64px;
+    width: 29.75rem;
 
-    background-color: ${({theme}) => theme.COLORS.DARK_700};
+    padding: 4rem;
 
-    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
-    height: 540px;
-    width: 476px;
+    background-color: ${({ theme }) => theme.COLORS.DARK_700};
+
+    border-radius: 1rem;
 
     > h1 {
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 42px;
-
         text-align: center;
-
-        margin-bottom: 32px;
+        color: ${({ theme }) => theme.COLORS.LIGHT_100};
     }
 
-    > span{
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 16px;
-        color: ${({theme}) => theme.COLORS.LIGHT_400};
+    > div {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        
+        span{
+            color: ${({ theme }) => theme.COLORS.LIGHT_400};
+        }
     }
 
-    input {
-        margin-top: 8px;
-        margin-bottom: 32px;
-    }
+    > a {
+        margin: 0 auto;
 
-    button{
-        margin-bottom: 32px;
+        border-style: none;
+        
+        color: ${({ theme }) => theme.COLORS.LIGHT_100};
     }
 `;
