@@ -12,9 +12,8 @@ import foodImg from "../../assets/image_food.png"
 export function Card(props){
 
     return(
-        <Link to={"/prato"}>
+        
         <Container>
-            
             <img src={foodImg} alt="" />
             
             <IoMdHeartEmpty size={36}/>
@@ -33,10 +32,9 @@ export function Card(props){
                 </Amount>
 
                 <Button title={"incluir"}/>
-            </div>
-
+            </div>  
         </Container>
-        </Link>
+        
         
     )
 }
