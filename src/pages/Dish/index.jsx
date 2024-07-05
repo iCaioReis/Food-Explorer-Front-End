@@ -14,7 +14,7 @@ export function Dish() {
         <Container>
             <Header />
             <Content>
-                <a href="" className="poppins_300_bold">
+                <a href="/" className="poppins_300_bold">
                     {<IoIosArrowBack />}
                     {"Voltar"}
                 </a>

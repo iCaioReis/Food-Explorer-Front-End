@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import { IoMdHeartEmpty } from "react-icons/io";
 import { FiMinus, FiPlus } from "react-icons/fi";
 
@@ -10,6 +12,7 @@ import foodImg from "../../assets/image_food.png"
 export function Card(props){
 
     return(
+        <Link to={"/prato"}>
         <Container>
             
             <img src={foodImg} alt="" />
@@ -31,11 +34,9 @@ export function Card(props){
 
                 <Button title={"incluir"}/>
             </div>
-            
-
-            
 
         </Container>
+        </Link>
         
     )
 }

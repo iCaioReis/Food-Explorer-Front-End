@@ -15,7 +15,7 @@ export function AddDish() {
 
             <Content>
 
-                <a href="" className="poppins_300_bold">
+                <a href="/" className="poppins_300_bold">
                     {<IoIosArrowBack />}
                     {"Voltar"}
                 </a>
