@@ -3,7 +3,8 @@ import logoImg from '../../assets/logo.png'
 
 import { Input } from "../../components/Input";
 import { Button } from '../../components/Button';
-import { ButtonText } from '../../components/ButtonText';
+
+import { Link } from 'react-router-dom';
 
 export function SignUp(){
     return(
@@ -32,7 +33,7 @@ export function SignUp(){
                 
                 <Button title={"Criar Conta"}/>
 
-                <ButtonText title={"Já tenho uma conta"}/>
+                <Link className="poppins_100_medium" to={"/"}> Já tenho uma conta </Link>
             </Form>
         </Container>
     )

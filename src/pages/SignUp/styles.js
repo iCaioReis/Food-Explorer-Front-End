@@ -62,6 +62,14 @@ export const Form = styled.form`
         }
     }
 
+    > a {
+        margin: 0 auto;
+
+        border-style: none;
+        
+        color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    }
+
     @media (max-width: ${DEVICE_BREACKPOINTS.SM}){
         background: none;
 
